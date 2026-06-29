@@ -1,146 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nusantara Journal of Economics and Business</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nusantara Journal of Economics and Business</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#1565c0;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    width:85%;
+    margin:30px auto;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Topbar (Opsional, untuk login/register atau info singkat) -->
-    <div class="topbar">
-        ISSN Online: 2656-3738 | ISSN Print: 2898-3759
+<header>
+    <h1>Nusantara Journal of Economics and Business</h1>
+    <p>Open Access Journal | Economics, Management and Business</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Current Issue</a>
+    <a href="#">Archives</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Welcome</h2>
+        <p>
+            Nusantara Journal of Economics and Business merupakan jurnal ilmiah
+            yang mempublikasikan hasil penelitian di bidang ekonomi,
+            manajemen, bisnis, dan kewirausahaan.
+        </p>
     </div>
 
-    <!-- Header -->
-    <header class="journal-header">
-        <div class="header-container">
-            <div class="logo-section">
-                <img src="logo.png" alt="NJEB Logo" class="journal-logo">
-            </div>
-            <div class="title-section">
-                <h1>NUSANTARA JOURNAL OF ECONOMICS AND BUSINESS</h1>
-                <p class="subtitle">
-                    Peer-Reviewed Journal in Economics, Management, Entrepreneurship, MSMEs and Creative Industry
-                </p>
-            </div>
-        </div>
-    </header>
-
-    <!-- Menu Navigasi Utama -->
-    <nav class="main-nav">
+    <div class="box">
+        <h2>Current Issue</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="editorial.html">Editorial Team</a></li>
-            <li><a href="issue.html">Current Issue</a></li>
-            <li><a href="archives.html">Archives</a></li>
-            <li><a href="guidelines.html">Author Guidelines</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>Analisis Strategi Bauran Pemasaran UMKM Songkok Recca.</li>
+            <li>Peran Ekonomi Kreatif dalam Pembangunan Daerah.</li>
+            <li>Digitalisasi UMKM di Era Industri 5.0.</li>
         </ul>
-    </nav>
-
-    <!-- Kontainer Utama (Bagi dua kolom: Main dan Sidebar) -->
-    <div class="container">
-        
-        <!-- Bagian Kiri (Konten Utama) -->
-        <main class="main-content">
-            
-            <h2 class="section-title">Current Issue</h2>
-            
-            <div class="current-issue-box">
-                <div class="issue-cover">
-                    <img src="cover.jpg" alt="Cover Volume 3 Number 3" class="cover-img">
-                </div>
-                <div class="issue-details">
-                    <h3>Volume 3 Number 3 (2022)</h3>
-                    <p><strong>Published:</strong> December 2022</p>
-                </div>
-            </div>
-
-            <h2 class="section-title">Articles</h2>
-
-            <div class="article-list">
-                
-                <!-- Artikel 1 -->
-                <article class="article-item">
-                    <h3 class="article-title">Marketing Mix Strategy in Traditional Businesses</h3>
-                    <p class="article-author">Andi Adrianto Rinalldy</p>
-                    
-                    <div class="article-abstract">
-                        <p>Penelitian ini bertujuan untuk menganalisis penerapan strategi bauran pemasaran 7P (Product, Price, Place, Promotion, People, Process, dan Physical Evidence) pada usaha kerajinan tradisional Songkok Recca di Kabupaten Bone. Songkok Recca merupakan warisan budaya takbenda sekaligus komoditas unggulan industri kreatif lokal yang memiliki nilai ekonomi tinggi, namun masih menghadapi tantangan dalam perluasan pasar di era digital...</p>
-                    </div>
-
-                    <div class="article-buttons">
-                        <a href="#" class="btn-primary">PDF</a>
-                        <a href="#" class="btn-secondary">DOI</a>
-                    </div>
-                </article>
-
-                <!-- Artikel 2 -->
-                <article class="article-item">
-                    <h3 class="article-title">The Role of Creative Industries in Regional Economic Development</h3>
-                    <p class="article-author">Author Name</p>
-                    <div class="article-buttons">
-                        <a href="#" class="btn-primary">PDF</a>
-                        <a href="#" class="btn-secondary">DOI</a>
-                    </div>
-                </article>
-
-            </div>
-        </main>
-
-        <!-- Bagian Kanan (Sidebar) -->
-        <aside class="sidebar">
-            
-            <div class="sidebar-block">
-                <h2>About Journal</h2>
-                <div class="block-content">
-                    <p>Nusantara Journal of Economics and Business publishes original research articles, reviews, and conceptual papers in economics and business.</p>
-                </div>
-            </div>
-
-            <div class="sidebar-block">
-                <h2>Journal Information</h2>
-                <div class="block-content">
-                    <ul>
-                        <li><strong>E-ISSN:</strong> 2656-3738</li>
-                        <li><strong>P-ISSN:</strong> 2898-3759</li>
-                        <li><strong>Frequency:</strong> June and December</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="sidebar-block">
-                <h2>Focus and Scope</h2>
-                <div class="block-content">
-                    <ul>
-                        <li>Economics</li>
-                        <li>Management</li>
-                        <li>Entrepreneurship</li>
-                        <li>MSMEs</li>
-                        <li>Creative Industry</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="sidebar-block">
-                <h2>Contact</h2>
-                <div class="block-content">
-                    <p>EconomijournalCenter@gmail.com</p>
-                    <p>Bone, South Sulawesi, Indonesia</p>
-                </div>
-            </div>
-
-        </aside>
-
     </div>
 
-    <!-- Footer -->
-    <footer class="journal-footer">
-        <p>&copy; 2022 Nusantara Journal of Economics and Business</p>
-    </footer>
+    <div class="box">
+        <h2>Information</h2>
+        <p><b>Frequency:</b> Twice a year</p>
+        <p><b>Language:</b> Indonesian and English</p>
+        <p><b>Open Access:</b> Yes</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Nusantara Journal of Economics and Business
+</footer>
 
 </body>
 </html>
