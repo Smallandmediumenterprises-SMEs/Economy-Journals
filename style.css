@@ -1,216 +1,293 @@
-.journal-header{
-    background:#ffffff;
-    border-top:6px solid #003366;
-    border-bottom:4px solid #003366;
-    padding:25px;
+/* =========================================
+   PENGATURAN WARNA & DASAR (ROOT)
+   ========================================= */
+:root {
+    --primary-color: #004a87; /* Warna Biru Khas Jurnal Akademik */
+    --hover-color: #00335e;
+    --bg-gray: #f4f6f8;
+    --text-dark: #333333;
+    --border-color: #dddddd;
 }
 
-.header-container{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.logo-section{
-    width:140px;
-    text-align:center;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-gray);
+    line-height: 1.6;
 }
 
-.journal-logo{
-    width:110px;
-    height:auto;
+/* =========================================
+   TOPBAR & HEADER
+   ========================================= */
+.topbar {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    padding: 6px 20px;
+    font-size: 0.85rem;
 }
 
-.title-section{
-    flex:1;
-    padding-left:25px;
+.journal-header {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.title-section h1{
-    color:#003366;
-    font-size:34px;
-    margin-bottom:10px;
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
-.subtitle{
-    color:#555;
-    font-size:17px;
-    margin-bottom:10px;
+.journal-logo {
+    max-width: 130px;
+    height: auto;
 }
 
-.issn{
-    color:#003366;
-    font-weight:bold;
-    font-size:16px;
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.title-section h1 {
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    color:#333;
+.title-section .subtitle {
+    font-size: 1rem;
+    color: #555;
 }
 
-.topbar{
-    background:#003366;
-    color:white;
-    padding:15px;
+/* =========================================
+   MENU NAVIGASI
+   ========================================= */
+.main-nav {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.header{
-    background:white;
-    padding:20px;
-    display:flex;
-    align-items:center;
-    gap:20px;
-    border-bottom:3px solid #003366;
+.main-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
 }
 
-.logo{
-    width:100px;
+.main-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s ease-in-out;
 }
 
-.header-text h1{
-    color:#003366;
-    margin-bottom:10px;
+.main-nav ul li a:hover {
+    background-color: var(--hover-color);
 }
 
-.header-text p{
-    font-size:14px;
+/* =========================================
+   LAYOUT UTAMA (FLEXBOX)
+   ========================================= */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
 }
 
-nav{
-    background:#00509e;
-    padding:15px;
+/* --- KONTEN KIRI (ARTIKEL) --- */
+.main-content {
+    flex: 3; /* Lebar porsi 75% */
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-right:20px;
-    font-weight:bold;
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
 }
 
-nav a:hover{
-    color:#ffd700;
+/* Desain Current Issue */
+.current-issue-box {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--border-color);
 }
 
-.container{
-    width:90%;
-    margin:30px auto;
-    display:flex;
-    gap:25px;
+.cover-img {
+    max-width: 140px;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-.main{
-    width:70%;
+.issue-details h3 {
+    margin-bottom: 10px;
+    color: var(--text-dark);
 }
 
-.sidebar{
-    width:30%;
+/* Desain List Artikel */
+.article-item {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eeeeee;
 }
 
-.card{
-    background:white;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:6px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+.article-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.card h2{
-    color:#003366;
-    margin-bottom:15px;
-    border-bottom:2px solid #ddd;
-    padding-bottom:10px;
+.article-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    line-height: 1.4;
 }
 
-.article{
-    margin-bottom:25px;
-    padding-bottom:20px;
-    border-bottom:1px solid #ddd;
+.article-author {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 12px;
 }
 
-.article h3{
-    color:#003366;
-    margin-bottom:10px;
+.article-abstract {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #444444;
+    text-align: justify;
 }
 
-.button{
-    display:inline-block;
-    background:#003366;
-    color:white;
-    text-decoration:none;
-    padding:8px 15px;
-    border-radius:4px;
-    margin-top:10px;
-    margin-right:10px;
+/* Tombol PDF dan DOI */
+.article-buttons {
+    display: flex;
+    gap: 10px;
 }
 
-.button:hover{
-    background:#00509e;
+.btn-primary, .btn-secondary {
+    padding: 6px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-.cover{
-    width:200px;
-    margin-bottom:20px;
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
 
-footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+.btn-primary:hover {
+    background-color: var(--hover-color);
 }
 
-ul{
-    padding-left:20px;
+.btn-secondary {
+    background-color: #e9ecef;
+    color: #333333;
+    border: 1px solid #cccccc;
 }
 
-@media(max-width:768px){
-
-.container{
-    flex-direction:column;
+.btn-secondary:hover {
+    background-color: #d3d9df;
 }
 
-.main,
-.sidebar{
-    width:100%;
+/* --- KONTEN KANAN (SIDEBAR) --- */
+.sidebar {
+    flex: 1; /* Lebar porsi 25% */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.header{
-    flex-direction:column;
-    text-align:center;
+.sidebar-block {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
 }
 
-nav a{
-    display:block;
-    margin-bottom:10px;
-}
-}
-@media(max-width:768px){
-
-.header-container{
-    flex-direction:column;
-    text-align:center;
+.sidebar-block h2 {
+    background-color: #f1f3f5;
+    padding: 12px 15px;
+    font-size: 1.05rem;
+    color: #333333;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.title-section{
-    padding-left:0;
-    margin-top:15px;
+.sidebar-block .block-content {
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
-.title-section h1{
-    font-size:24px;
+.sidebar-block ul {
+    list-style: none;
 }
 
-.journal-logo{
-    width:90px;
+.sidebar-block ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #dddddd;
 }
 
+.sidebar-block ul li:last-child {
+    border-bottom: none;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.journal-footer {
+    background-color: #333333;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* =========================================
+   RESPONSIVITAS (TAMPILAN MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Mengubah susunan baris menjadi kolom saat layar kecil */
+    .container {
+        flex-direction: column;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .current-issue-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-nav ul li a {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
 }
