@@ -1,3 +1,48 @@
+.journal-header{
+    background:#ffffff;
+    border-top:6px solid #003366;
+    border-bottom:4px solid #003366;
+    padding:25px;
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+
+.logo-section{
+    width:140px;
+    text-align:center;
+}
+
+.journal-logo{
+    width:110px;
+    height:auto;
+}
+
+.title-section{
+    flex:1;
+    padding-left:25px;
+}
+
+.title-section h1{
+    color:#003366;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#555;
+    font-size:17px;
+    margin-bottom:10px;
+}
+
+.issn{
+    color:#003366;
+    font-weight:bold;
+    font-size:16px;
 *{
     margin:0;
     padding:0;
