@@ -397,3 +397,31 @@ body {
 .btn-login:hover {
     background-color: #d4d4d4;
 }
+/* =========================================
+   TAMBAHAN DESAIN UNTUK HALAMAN REGISTER
+   ========================================= */
+
+.register-form-container {
+    max-width: 650px; /* Dibuat lebih lebar dari halaman login */
+}
+
+.form-section-title {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.form-group small {
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.form-instruction {
+    line-height: 1.8;
+}
