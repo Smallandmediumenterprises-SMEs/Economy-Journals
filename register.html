@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Nusantara Journal of Economics and Business</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="journal-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="logo.png" alt="NJEB Logo" class="journal-logo">
+            </div>
+            <div class="title-section">
+                <h1>NUSANTARA JOURNAL OF ECONOMICS AND BUSINESS</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="issue.html">CURRENT</a></li>
+            <li><a href="archives.html">ARCHIVES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="editorial.html">PEOPLE</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <main class="main-content" style="flex: 1;">
+            
+            <div class="breadcrumb">
+                <a href="index.html">HOME</a> / <span>Register</span>
+            </div>
+
+            <h2 class="page-title">Register</h2>
+            
+            <p class="form-instruction">Fill in this form to register with this site.<br>Required fields are marked with an asterisk: <span>*</span></p>
+
+            <div class="register-form-container">
+                <form action="#" method="POST" class="ojs-form">
+                    
+                    <h3 class="form-section-title">Profile</h3>
+
+                    <div class="form-group">
+                        <label for="username"><i>Username</i> <span>*</span></label>
+                        <input type="text" id="username" name="username" required>
+                        <small>The username must contain only lowercase letters, numbers, and hyphens/underscores.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i>Password</i> <span>*</span></label>
+                        <input type="password" id="password" name="password" required>
+                        <small>The password must be at least 6 characters.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="repeat_password"><i>Repeat password</i> <span>*</span></label>
+                        <input type="password" id="repeat_password" name="repeat_password" required>
+                    </div>
+
+                    <h3 class="form-section-title">Personal Information</h3>
+
+                    <div class="form-group">
+                        <label for="first_name"><i>First Name</i> <span>*</span></label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name"><i>Last Name</i> <span>*</span></label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="affiliation"><i>Affiliation</i> <span>*</span></label>
+                        <input type="text" id="affiliation" name="affiliation" required>
+                        <small>e.g., Universitas Negeri Makassar</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i>Email</i> <span>*</span></label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_email"><i>Confirm Email</i> <span>*</span></label>
+                        <input type="text" id="confirm_email" name="confirm_email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country"><i>Country</i></label>
+                        <input type="text" id="country" name="country" placeholder="e.g., Indonesia">
+                    </div>
+
+                    <h3 class="form-section-title">Register As</h3>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="reader" name="reader" checked>
+                        <label for="reader"><strong>Reader:</strong> Notified by email on publication of an issue of the journal.</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="author" name="author">
+                        <label for="author"><strong>Author:</strong> Able to submit items to the journal.</label>
+                    </div>
+
+                    <div class="form-actions" style="margin-top: 30px;">
+                        <button type="submit" class="btn-login">Register</button>
+                        <a href="login.html" class="register-link" style="margin-left: 15px;">Already have an account? Login</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer class="journal-footer">
+        <p>&copy; 2022 Nusantara Journal of Economics and Business</p>
+    </footer>
+
+</body>
+</html>
