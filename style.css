@@ -16,6 +16,26 @@
 }
 
 body {
+    /* Menambahkan gambar background */
+    background-image: url('background.png'); 
+    
+    /* Mengatur agar background tidak berulang */
+    background-repeat: no-repeat; 
+    
+    /* Mengatur agar background menutupi seluruh layar */
+    background-size: cover; 
+    
+    /* Mengatur agar background tetap diam saat halaman di-scroll */
+    background-attachment: fixed; 
+    
+    /* Mengatur posisi background di tengah */
+    background-position: center; 
+    
+    /* Font dan warna dasar tetap dipertahankan */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--text-dark);
     background-color: var(--bg-gray);
