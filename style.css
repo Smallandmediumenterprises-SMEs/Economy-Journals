@@ -445,3 +445,16 @@ body {
 .form-instruction {
     line-height: 1.8;
 }
+
+.journal-description {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #cccccc; /* Memberikan garis pembatas putus-putus */
+}
+
+.journal-description p {
+    text-align: justify; /* Membuat teks rata kanan-kiri agar rapi */
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #333333;
+}
