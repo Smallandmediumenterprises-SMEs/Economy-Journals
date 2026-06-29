@@ -8,7 +8,12 @@
 </head>
 <body>
 
-    <!-- Header Pertama -->
+    <!-- Topbar (Opsional, untuk login/register atau info singkat) -->
+    <div class="topbar">
+        ISSN Online: 2656-3738 | ISSN Print: 2898-3759
+    </div>
+
+    <!-- Header -->
     <header class="journal-header">
         <div class="header-container">
             <div class="logo-section">
@@ -19,123 +24,113 @@
                 <p class="subtitle">
                     Peer-Reviewed Journal in Economics, Management, Entrepreneurship, MSMEs and Creative Industry
                 </p>
-                <p class="issn">
-                    E-ISSN: 2656-3738 | P-ISSN: 2898-3759
-                </p>
             </div>
         </div>
     </header>
 
-    <!-- Topbar -->
-    <div class="topbar">
-        ISSN Online: 2656-3738 | ISSN Print: 2898-3759
-    </div>
-
-    <!-- Header Kedua -->
-    <div class="header">
-        <img src="logo.png" alt="Logo" class="logo">
-        <div class="header-text">
-            <h1>NUSANTARA JOURNAL OF ECONOMICS AND BUSINESS</h1>
-            <p>
-                Peer-Reviewed Journal in Economics, Management, Entrepreneurship, MSMEs and Creative Industry
-            </p>
-        </div>
-    </div>
-
-    <!-- Navigasi Utama -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="editorial.html">Editorial Team</a>
-        <a href="issue.html">Current Issue</a>
-        <a href="archives.html">Archives</a>
-        <a href="guidelines.html">Author Guidelines</a>
-        <a href="contact.html">Contact</a>
+    <!-- Menu Navigasi Utama -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="editorial.html">Editorial Team</a></li>
+            <li><a href="issue.html">Current Issue</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="guidelines.html">Author Guidelines</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Kontainer Utama -->
+    <!-- Kontainer Utama (Bagi dua kolom: Main dan Sidebar) -->
     <div class="container">
         
-        <!-- Bagian Konten Utama -->
-        <main class="main">
+        <!-- Bagian Kiri (Konten Utama) -->
+        <main class="main-content">
             
-            <section class="card">
-                <h2>Current Issue</h2>
-                <img src="cover.jpg" alt="Cover Jurnal" class="cover">
-                <p><strong>Volume 3 Number 3 (2022)</strong></p>
-                <p>Published: December 2022</p>
-            </section>
+            <h2 class="section-title">Current Issue</h2>
+            
+            <div class="current-issue-box">
+                <div class="issue-cover">
+                    <img src="cover.jpg" alt="Cover Volume 3 Number 3" class="cover-img">
+                </div>
+                <div class="issue-details">
+                    <h3>Volume 3 Number 3 (2022)</h3>
+                    <p><strong>Published:</strong> December 2022</p>
+                </div>
+            </div>
 
-            <section class="card">
-                <h2>Published Articles</h2>
+            <h2 class="section-title">Articles</h2>
 
-                <article class="article">
-                    <h3>Marketing Mix Strategy in Traditional Businesses</h3>
-                    <p>Author: Andi Adrianto Rinalldy</p>
+            <div class="article-list">
+                
+                <!-- Artikel 1 -->
+                <article class="article-item">
+                    <h3 class="article-title">Marketing Mix Strategy in Traditional Businesses</h3>
+                    <p class="article-author">Andi Adrianto Rinalldy</p>
                     
-                    <div class="abstract-content" style="margin-bottom: 15px;">
-                        <p>Penelitian ini bertujuan untuk menganalisis penerapan strategi bauran pemasaran 7P (Product, Price, Place, Promotion, People, Process, dan Physical Evidence) pada usaha kerajinan tradisional Songkok Recca di Kabupaten Bone. Songkok Recca merupakan warisan budaya takbenda sekaligus komoditas unggulan industri kreatif lokal yang memiliki nilai ekonomi tinggi, namun masih menghadapi tantangan dalam perluasan pasar di era digital. Penelitian ini menggunakan metode kualitatif deskriptif dengan pendekatan studi kasus. Pengumpulan data dilakukan melalui wawancara mendalam, observasi, dan dokumentasi terhadap pemilik usaha, pengrajin, dan konsumen.</p>
-                        <p>Hasil penelitian menunjukkan bahwa elemen Produk (Product) sangat mengedepankan kualitas bahan serat lontar dan keaslian desain; Harga (Price) ditetapkan bervariasi bergantung pada tingkat kehalusan anyaman dan ornamen emas (bila ada); Tempat (Place) masih didominasi oleh penjualan langsung di galeri lokal dan pameran budaya, meski mulai merambah e-commerce; Promosi (Promotion) utamanya mengandalkan pemasaran dari mulut ke mulut (word-of-mouth) dan penggunaan media sosial secara terbatas; Orang (People) sangat bergantung pada keterampilan turun-temurun para pengrajin lokal; Proses (Process) mempertahankan metode penenunan tradisional yang memakan waktu namun menjamin kualitas eksklusif; dan Bukti Fisik (Physical Evidence) tercermin dari penataan etalase toko dan kemasan produk. Secara keseluruhan, penerapan bauran pemasaran 7P telah mampu mempertahankan keberlangsungan usaha Songkok Recca. Namun, diperlukan optimalisasi yang lebih agresif pada aspek promosi digital dan ekspansi saluran distribusi pemasaran untuk menjangkau konsumen nasional dan internasional.</p>
-                        <p><strong>Kata Kunci:</strong> Bauran Pemasaran 7P, Songkok Recca, Industri Kreatif, UMKM, Kabupaten Bone.</p>
+                    <div class="article-abstract">
+                        <p>Penelitian ini bertujuan untuk menganalisis penerapan strategi bauran pemasaran 7P (Product, Price, Place, Promotion, People, Process, dan Physical Evidence) pada usaha kerajinan tradisional Songkok Recca di Kabupaten Bone. Songkok Recca merupakan warisan budaya takbenda sekaligus komoditas unggulan industri kreatif lokal yang memiliki nilai ekonomi tinggi, namun masih menghadapi tantangan dalam perluasan pasar di era digital...</p>
                     </div>
 
-                    <a href="#" class="button">PDF</a>
-                    <a href="#" class="button">DOI</a>
+                    <div class="article-buttons">
+                        <a href="#" class="btn-primary">PDF</a>
+                        <a href="#" class="btn-secondary">DOI</a>
+                    </div>
                 </article>
 
-                <article class="article">
-                    <h3>The Role of Creative Industries in Regional Economic Development</h3>
-                    <p>Author: Author Name</p>
-                    <a href="#" class="button">Abstract</a>
-                    <a href="#" class="button">PDF</a>
-                    <a href="#" class="button">DOI</a>
+                <!-- Artikel 2 -->
+                <article class="article-item">
+                    <h3 class="article-title">The Role of Creative Industries in Regional Economic Development</h3>
+                    <p class="article-author">Author Name</p>
+                    <div class="article-buttons">
+                        <a href="#" class="btn-primary">PDF</a>
+                        <a href="#" class="btn-secondary">DOI</a>
+                    </div>
                 </article>
 
-                <article class="article">
-                    <h3>Digital Marketing Strategies for MSMEs</h3>
-                    <p>Author: Author Name</p>
-                    <a href="#" class="button">Abstract</a>
-                    <a href="#" class="button">PDF</a>
-                    <a href="#" class="button">DOI</a>
-                </article>
-
-            </section>
-
+            </div>
         </main>
 
-        <!-- Bagian Sidebar -->
+        <!-- Bagian Kanan (Sidebar) -->
         <aside class="sidebar">
             
-            <div class="card">
+            <div class="sidebar-block">
                 <h2>About Journal</h2>
-                <p>
-                    Nusantara Journal of Economics and Business publishes original research articles, reviews, and conceptual papers in economics and business.
-                </p>
+                <div class="block-content">
+                    <p>Nusantara Journal of Economics and Business publishes original research articles, reviews, and conceptual papers in economics and business.</p>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="sidebar-block">
                 <h2>Journal Information</h2>
-                <p>E-ISSN : 2656-3738</p>
-                <p>P-ISSN : 2898-3759</p>
-                <p>Publication Frequency :<br>June and December</p>
+                <div class="block-content">
+                    <ul>
+                        <li><strong>E-ISSN:</strong> 2656-3738</li>
+                        <li><strong>P-ISSN:</strong> 2898-3759</li>
+                        <li><strong>Frequency:</strong> June and December</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="sidebar-block">
                 <h2>Focus and Scope</h2>
-                <ul>
-                    <li>Economics</li>
-                    <li>Management</li>
-                    <li>Entrepreneurship</li>
-                    <li>MSMEs</li>
-                    <li>Creative Industry</li>
-                    <li>Regional Development</li>
-                </ul>
+                <div class="block-content">
+                    <ul>
+                        <li>Economics</li>
+                        <li>Management</li>
+                        <li>Entrepreneurship</li>
+                        <li>MSMEs</li>
+                        <li>Creative Industry</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="sidebar-block">
                 <h2>Contact</h2>
-                <p>EconomijournalCenter@gmail.com</p>
-                <p>Bone, South Sulawesi, Indonesia</p>
+                <div class="block-content">
+                    <p>EconomijournalCenter@gmail.com</p>
+                    <p>Bone, South Sulawesi, Indonesia</p>
+                </div>
             </div>
 
         </aside>
@@ -143,7 +138,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="journal-footer">
         <p>&copy; 2022 Nusantara Journal of Economics and Business</p>
     </footer>
 
