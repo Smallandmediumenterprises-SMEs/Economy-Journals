@@ -491,3 +491,44 @@ body {
 .sidebar-block ul li a:hover {
     text-decoration: underline;
 }
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.sidebar-block {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.block-title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list li {
+    padding: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.sidebar-list li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 0.9em;
+}
+
+.sidebar-list li a:hover {
+    text-decoration: underline;
+}
