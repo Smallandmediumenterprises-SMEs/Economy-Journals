@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menawan Journal of Economics and Business</title>
+    <title>Menawan : Journal of Economics and Business</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,14 +20,15 @@
                 <img src="logo.png" alt="Nusantara Journal Logo" class="journal-logo">
             </div>
             <div class="title-section">
-                <h1>MENAWAN JOURNAL OF ECONOMICS AND BUSINESS</h1>
+                <h1>MENAWAN : JOURNAL OF ECONOMICS AND BUSINESS</h1>
                 <p class="subtitle">
                     Journal in Economics, Economy Studies, Management, Entrepreneurship, MSMEs and Creative Industry
                 </p>
             </div>
         </div>
     </header>
-      <!-- Menu Navigasi Utama -->
+
+    <!-- Menu Navigasi Utama -->
    <nav class="main-nav">
         <ul>
             <li><a href="login.html">LOGIN</a></li>
@@ -40,86 +41,130 @@
         </ul>
     </nav>
 
-   <aside class="sidebar">
-    <!-- Blok About -->
+    <div class="container">
+        
+        <main class="main-content">
+            <section class="journal-description"></section>
+            
+            <h2 class="section-title">Current Issue</h2>
+            
+            <div class="current-issue-box">
+                <div class="issue-cover">
+                    <img src="cover.jpg" alt="Cover Volume 3 Number 3" class="cover-img">
+                </div>
+                <div class="issue-details">
+                    <h3>Volume 1 Number 1 (2023)</h3>
+                    <p><strong>Published:</strong> December 2023</p>
+                </div>
+            </div>
+
+            <section class="journal-description">
+                <p>
+                    <strong>MENAWAN, JOURNAL OF ECONOMICS AND BUSINESS</strong> 
+                    Journal of Research and Publication in Economics with e-ISSN: 3025-4728 and p-ISSN: 3025-5899 is a journal intended for
+                    the publication of scientific articles published by the Indonesian Association of Economic and Accounting Research. 
+                    This journal is published twice a year (August and December).
+                </p>
+                <p>
+                    <strong>MENAWAN, JOURNAL OF ECONOMICS AND BUSINESS</strong> 
+                    is intended to disseminate, develop, and facilitate research findings in the fields of Economics and Accounting, 
+                    serving as a medium for lecturers, teachers, researchers, and practitioners 
+                    in the fields of Economics and Management from all over Indonesia to exchange 
+                    information about the latest research results that have been conducted.
+                </p>
+            </section>
+            
+            <h2 class="section-title">Articles</h2>
+
+            <div class="article-list">
+                
+                <!-- Artikel 1: Judul sekarang bisa diklik -->
+                <article class="article-item">
+                    <h3 class="article-title">
+                        <a href="artikel-songkok.html" target="_blank" style="text-decoration: none; color: inherit;">
+                            Analisis Strategi Bauran Pemasaran (Studi Usaha Songkok Reca Nurazizah di Kabupaten Bone)
+                        </a>
+                    </h3>
+                    <p class="article-author">Andi Adrianto Rinalldy</p>
+                    
+                    <div class="article-abstract">
+                        <p>Penelitian ini bertujuan untuk menganalisis penerapan strategi bauran pemasaran 7P (Product, Price, Place, Promotion, People, Process, dan Physical Evidence) pada usaha kerajinan tradisional Songkok Recca di Kabupaten Bone...</p>
+                    </div>
+
+                    <div class="article-buttons">
+                        <a href="pdf/artikel1.pdf" target="_blank" class="btn-primary">PDF</a>
+                        <a href="#" class="btn-secondary">DOI</a>
+                    </div>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article class="article-item">
+                    <h3 class="article-title">The Role of Creative Industries in Regional Economic Development</h3>
+                    <p class="article-author">Author Name</p>
+                    <div class="article-abstract">
+                        <p>Abstract will be placed here. This study examines the significant impact of local creative industries on the broader regional economic growth...</p>
+                    </div>
+                    <div class="article-buttons">
+                        <a href="#" class="btn-primary">PDF</a>
+                        <a href="#" class="btn-secondary">DOI</a>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <!-- Sidebar konten tetap sama -->
+            <div class="sidebar-block">
+                <h2>About Journal</h2>
+                <div class="block-content">
+                    <p>Menawan : Journal of Economics and Business publishes original research articles, reviews, and conceptual papers in economics and business.</p>
+                </div>
+            </div>
+           <!-- Blok Navigasi Tambahan -->
     <div class="sidebar-block">
-        <h2 class="block-title">About</h2>
-        <p>Nusantara Journal of Economics and Business publishes original research articles, reviews, and conceptual papers in economics and business.</p>
+        <h2>Information</h2>
+        <ul>
+            <li><a href="#">For Readers</a></li>
+            <li><a href="#">For Authors</a></li>
+            <li><a href="#">For Librarians</a></li>
+        </ul>
+    </div>
+
+    <!-- Blok Kebijakan/Etika -->
+    <div class="sidebar-block">
+        <h2>Policies</h2>
+        <ul>
+            <li><a href="#">Online Submission</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Reviewer Team</a></li>
+            <li><a href="#">Focus and Scope</a></li>
+            <li><a href="#">Peer Review Process</a></li>
+            <li><a href="#">Publication Ethics</a></li>
+            <li><a href="#">Author Guidelines</a></li>
+            <li><a href="#">Template</a></li>
+        </ul>
+    </div>
+
+    <!-- Blok Statistik/ISSN -->
+    <div class="sidebar-block">
+        <h2>Journal Content</h2>
+        <p><strong>ISSN (Online):</strong> 3025-4728</p>
+        <p><strong>ISSN (Print):</strong> 3025-5899</p>
+    </div>
+</aside>
     </div>
 
     <!-- Blok Search -->
     <div class="sidebar-block">
         <h2 class="block-title">Search</h2>
-        <div style="padding: 10px;">
-            <input type="text" placeholder="Search Articles..." style="width: 100%; padding: 5px;">
-        </div>
+        <p>SEARCH</p>
+        <input type="text" placeholder="Search Articles...">
     </div>
 
-    <!-- Blok Information -->
-    <div class="sidebar-block">
-        <h2 class="block-title">Information</h2>
-        <ul class="sidebar-list">
-            <li><a href="#">&rarr; For Readers</a></li>
-            <li><a href="#">&rarr; For Authors</a></li>
-            <li><a href="#">&rarr; For Librarians</a></li>
-        </ul>
-    </div>
+    <footer class="journal-footer">
+        <p>Asosiasi Riset Ekonomi Indonesia | &copy; 2017 Nusantara Journal of Economics and Business</p>
+    </footer>
 
-    <!-- Blok Policies -->
-    <div class="sidebar-block">
-        <h2 class="block-title">Policies</h2>
-        <ul class="sidebar-list">
-            <li><a href="#">&rarr; Focus and Scope</a></li>
-            <li><a href="#">&rarr; Peer Review Process</a></li>
-            <li><a href="#">&rarr; Publication Ethics</a></li>
-            <li><a href="#">&rarr; Author Guidelines</a></li>
-        </ul>
-    </div>
-</aside>
-    </div>
-    <div class="container">
-        <main class="main-content">
-            <!-- Bagian Isi Artikel -->
-          <article class="full-article">
-    <!-- Judul -->
-    <h2 class="article-title"> Analisis Strategi Bauran Pemasaran (Studi Usaha Songkok Reca Nurazizah di Kabupaten Bone)</h2>
-    
-    <!-- Penulis dan Afiliasi -->
-    <p class="article-author">
-        Andi Adrianto Rinalldy<sup>(1)<sup>, Tuti Supatminingsih<sup>(2)<sup>, Rahmatullah<sup>(3), Mustari<sup>, 
-            Muhammad Dinar<sup>
-    </p>
-    <p class="article-affiliation">
-        (1) Universitas Negeri Makassar
-        (2) Universitas Negeri Makassar
-        (3) Universitas Negeri Makassar
-        (4) Universitas Negeri Makassar
-        (5) Universitas Negeri Makassar
-    </p>
-
-    <!-- DOI dan Tombol -->
-    <div class="article-meta"> 
-        <p>DOI: <a href="#"></a></p>
-    </div>
-
-    <!-- Konten Artikel -->
-    <h3>Abstract</h3>
-    <p class="article-text">Penelitian ini bertujuan untuk menganalisis penerapan strategi bauran pemasaran 7P (Product, Price, Place, Promotion, People, Process, dan Physical Evidence) dalam upaya meningkatkan daya beli konsumen pada usaha kerajinan tradisional Songkok Recca di Kabupaten Bone.
-
-Songkok Recca merupakan warisan budaya takbenda yang menjadi komoditas unggulan industri kreatif lokal, namun masih menghadapi tantangan dalam perluasan pasar di era digital.
-
-Penelitian ini menggunakan metode deskriptif kualitatif dengan pendekatan studi kasus. Data dikumpulkan melalui observasi, wawancara mendalam dengan pemilik usaha, dan dokumentasi. Teknik analisis data dilakukan melalui tahapan reduksi data, penyajian data, dan penarikan kesimpulan.
-
-Hasil penelitian menunjukkan bahwa strategi bauran pemasaran yang diterapkan oleh pelaku usaha Songkok Recca telah mencakup tujuh elemen tersebut, meskipun pelaksanaannya masih dominan pada aspek produk dan tempat. Analisis menunjukkan bahwa kekuatan utama terletak pada keunikan produk (Product), sementara tantangan terbesar ditemukan pada aspek promosi (Promotion) yang belum memanfaatkan platform digital secara optimal.
-
-Penelitian ini menyimpulkan bahwa penguatan pada aspek promosi digital dan standarisasi proses produksi dapat menjadi strategi utama untuk meningkatkan daya beli konsumen di pasar yang lebih luas.</p>
-
-    <h3>Keywords</h3>
-    <p>Bauran Pemasaran, Strategi, Songkok Recca, </p>
-
-    <h3>References</h3>
-    <ul class="references-list">
-        <li>Aditya, M., Ratumbuysang, M. F. N. G., dkk. (2024). Judul Artikel...</li>
-        <li>Al-Jubari, I., Hassan, A., & Lifian, F. (2019). Judul Artikel...</li>
-    </ul>
-</article>
+</body>
+</html>
